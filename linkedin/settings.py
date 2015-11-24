@@ -18,7 +18,7 @@ USER_AGENT = "Mozilla/5.0 (Windows NT 6.2; WOW64)"
 CONCURRENT_REQUESTS = 16
 
 DOWNLOADER_MIDDLEWARES = {
-    'comm.rotate_useragent.RotateUserAgentMiddleware' :400,
+    'linkedin.comm.rotate_useragent.RotateUserAgentMiddleware' :400,
     'scrapy.contrib.downloadermiddleware.retry.RetryMiddleware': 500,
     'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware': 750,
 }
