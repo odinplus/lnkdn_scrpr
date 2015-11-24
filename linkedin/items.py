@@ -12,3 +12,9 @@ class LinkedinItem(scrapy.Item):
     company_name = scrapy.Field()
     industry = scrapy.Field()
     headquarters = scrapy.Field()
+
+class LinkedinUserItem(scrapy.Item):
+    page_url = scrapy.Field()
+    full_name = scrapy.Field()
+    position_name = scrapy.Field()
+    position_company = scrapy.Field()
