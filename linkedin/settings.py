@@ -27,5 +27,11 @@ RETRY_TIMES = 5
 
 RETRY_HTTP_CODES = [500, 502, 503, 504, 400, 408, 999]
 
+ITEM_PIPELINES = {'linkedin.pipelines.MongoDBPipeline':100, }
+
+MONGODB_URI = "mongodb://localhost/linkedin"
+MONGODB_DB = "linkedin"
+
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'linkedin (+http://www.yourdomain.com)'
